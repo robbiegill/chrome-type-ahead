@@ -1,0 +1,236 @@
+chrome-type-ahead (0.4.2) unstable; urgency=low
+
+  * issue146: call setAlternativeActiveDocument at the beginning
+  * Remove permission tabs.  
+
+ --  <tokland@gmail.com>  Tue, 27 Nov 2012 18:17:25 +0100
+
+chrome-type-ahead (0.4.1) unstable; urgency=low
+
+  * Update to Manifest v2 
+
+ --  <tokland@gmail.com>  Tue, 13 Nov 2012 15:07:38 +0100
+
+chrome-type-ahead (0.4.0) unstable; urgency=low
+
+  * Box colors configurable (issue139).
+
+ --  <tokland@gmail.com>  Fri, 02 Mar 2012 11:16:29 +0100
+
+chrome-type-ahead (0.3.9) unstable; urgency=low
+
+  * Timeout configurable.
+  * When timeout is reached, hide search box but don't clear current search.
+
+ --  <tokland@gmail.com>  Tue, 26 Jul 2011 19:24:58 +0200
+
+chrome-type-ahead (0.3.8) unstable; urgency=low
+
+  * issue126: really, fix the google+ issue
+
+ --  <tokland@gmail.com>  Fri, 08 Jul 2011 23:11:59 +0200
+
+chrome-type-ahead (0.3.7) unstable; urgency=low
+
+  * issue126: fix in google+
+  * issue110: add timeout 
+
+ --  <tokland@gmail.com>  Fri, 08 Jul 2011 18:51:06 +0200
+
+chrome-type-ahead (0.3.6) unstable; urgency=low
+
+  * issue108: fix options load 
+
+ --  <tokland@gmail.com>  Thu, 13 Jan 2011 12:12:21 +0100
+
+chrome-type-ahead (0.3.5) unstable; urgency=low
+
+  * new feature: start search on viewport
+  * issue105: fix tab when search mode is off
+  * issue106: set events on DOM as soon as possible
+
+ --  <tokland@gmail.com>  Tue, 11 Jan 2011 14:53:09 +0100
+
+chrome-type-ahead (0.3.4) unstable; urgency=low
+
+  * issue97: fix for newer (>=8.0) releases
+  * issue103: don't activate on object tags (usually flash)
+
+ --  <tokland@gmail.com>  Sat, 16 Oct 2010 18:58:48 +0200
+
+chrome-type-ahead (0.3.3) unstable; urgency=low
+
+  * issue92: fix options save 
+
+ --  <tokland@gmail.com>  Thu, 05 Aug 2010 10:16:13 +0200
+
+chrome-type-ahead (0.3.2) unstable; urgency=low
+
+  * Implement a less-style in case-sensitivity/insensitivity 
+  * Remove option: search in options (true by default)
+
+ --  <tokland@gmail.com>  Wed, 28 Jul 2010 16:16:10 +0200
+
+chrome-type-ahead (0.3.1) unstable; urgency=low
+
+  * issue87: Blacklist not working anymore 
+
+ --  <tokland@gmail.com>  Tue, 29 Jun 2010 13:24:53 +0200
+
+chrome-type-ahead (0.3) unstable; urgency=low
+
+  * issue84: null body.addEventListener on some pages
+  * issue86: Odd non-match in a search
+  * issue83: Don't search regexps
+  * issue81: fix z-index
+
+ --  <tokland@gmail.com>  Sun, 27 Jun 2010 22:48:07 +0200
+
+chrome-type-ahead (0.2.9) unstable; urgency=low
+
+  * Fix issue80: bug with blacklist using '*' wildcards
+
+ --  <tokland@gmail.com>  Fri, 28 May 2010 21:54:50 +0200
+
+chrome-type-ahead (0.2.8) unstable; urgency=low
+
+  * Complete disable of blacklisted-sites.
+  * Fix Chrome tab behavior: go to next link.
+
+ --  <tokland@gmail.com>  Sat, 22 May 2010 16:29:18 +0200
+
+chrome-type-ahead (0.2.7) unstable; urgency=low
+
+  * Improve range selection.
+
+ --  <tokland@gmail.com>  Fri, 12 Feb 2010 22:57:24 +0100
+
+chrome-type-ahead (0.2.6) unstable; urgency=low
+
+  * issue48: CMD-G goes to next 'hit' as well
+  * issue57: Extension finds all matches in the same block of text 
+
+ --  <tokland@gmail.com>  Sat, 06 Feb 2010 23:24:16 +0100
+
+chrome-type-ahead (0.2.5) unstable; urgency=low
+
+  * Fix move to text node 
+
+ --  <tokland@gmail.com>  Sun, 10 Jan 2010 02:10:59 +0100
+
+chrome-type-ahead (0.2.4) unstable; urgency=low
+
+  * Fix input detection. 
+
+ --  <tokland@gmail.com>  Sat, 09 Jan 2010 09:41:03 +0100
+
+chrome-type-ahead (0.2.3) unstable; urgency=low
+
+  * Fix isActiveInput in framed pages (issue39). 
+
+ --  <tokland@gmail.com>  Thu, 07 Jan 2010 12:13:00 +0100
+
+chrome-type-ahead (0.2.2) unstable; urgency=low
+
+  * Fix event propagation on sites with shortcuts.
+  * Support for comments and real regexps in blacklist (start line with |).
+  * Add (a hopefully temporal) hack to coexist with Autozoom extension. 
+
+ --  <tokland@gmail.com>  Mon, 04 Jan 2010 12:09:39 +0100
+
+chrome-type-ahead (0.2.1) unstable; urgency=low
+
+  * Fix box position (consider window's offset)
+  * Direct search configurable
+
+ --  <tokland@gmail.com>  Sat, 02 Jan 2010 23:03:11 +0100
+
+chrome-type-ahead (0.2) unstable; urgency=low
+
+  * Fix propagation in blacklisted sites 
+  * Fix search mode selection
+
+ --  <tokland@gmail.com>  Sat, 02 Jan 2010 20:17:54 +0100
+
+chrome-type-ahead (0.1.2) unstable; urgency=low
+
+  * Add option: starts_only_links
+  * Consider also 'visibility: hidden' CSS as non-matchable elements 
+  * Do not start search on element with 'contenteditable' attribute enabled
+  * Add sites blacklist
+  * Add alternative / to start primary mode (but only way for blacklisted sites)
+
+ --  <tokland@gmail.com>  Thu, 31 Dec 2009 20:26:52 +0100
+
+chrome-type-ahead (0.1.1) unstable; urgency=low
+
+  * Add option to enable/disable search in select/options 
+
+ --  <tokland@gmail.com>  Wed, 30 Dec 2009 20:58:42 +0100
+
+chrome-type-ahead (0.1) unstable; urgency=low
+
+  * First upload to official site
+
+ --  <tokland@gmail.com>  Wed, 30 Dec 2009 15:36:34 +0100
+
+chrome-type-ahead (0.0.9) unstable; urgency=low
+
+  * Set manually document.activeElement
+  * Add Alt+n/p to switch matches
+
+ --  <tokland@gmail.com>  Tue, 29 Dec 2009 01:20:44 +0100
+
+chrome-type-ahead (0.0.8) unstable; urgency=low
+
+  * Fire onchange events when option select is activated (enter key)
+
+ --  <tokland@gmail.com>  Fri, 25 Dec 2009 20:34:30 +0100
+
+chrome-type-ahead (0.0.7) unstable; urgency=low
+
+  * Search in frames
+
+ --  <tokland@gmail.com>  Fri, 25 Dec 2009 01:09:00 +0100
+
+chrome-type-ahead (0.0.6) unstable; urgency=low
+
+  * F3/Control+G to search next
+  * F4 to switch modes 
+
+ --  <tokland@gmail.com>  Mon, 21 Dec 2009 21:14:11 +0100
+
+chrome-type-ahead (0.0.5) unstable; urgency=low
+
+  * Search text inside select options 
+  * Refactor styles
+
+ --  <tokland@gmail.com>  Sun, 20 Dec 2009 14:29:41 +0100
+
+chrome-type-ahead (0.0.4) unstable; urgency=low
+
+  * Fix text search
+
+ --  <tokland@gmail.com>  Sat, 19 Dec 2009 22:51:14 +0100
+
+chrome-type-ahead (0.0.3) unstable; urgency=low
+
+  * Show overlay box with current search 
+  * Add options: only links, case sensitive
+
+ --  <tokland@gmail.com>  Fri, 18 Dec 2009 20:06:20 +0100
+
+chrome-type-ahead (0.0.2) unstable; urgency=low
+
+  * Consider space entity (&nbsp;) as space in searches. 
+  * Add (internal) options: case-sensitive and only-links.
+
+ --  <tokland@gmail.com>  Sun, 13 Dec 2009 15:03:46 +0100
+
+chrome-type-ahead (0.0.1) unstable; urgency=high
+
+  * First upload.
+  * Search only in links.
+  * No configuration.
+
+ --  <tokland@gmail.com>  Tue, 08 Dec 2009 19:49:02 +0100
